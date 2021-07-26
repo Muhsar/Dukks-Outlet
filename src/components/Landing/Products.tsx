@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { products } from '../../pages/productsList';
+import { products } from 'pages/productsList';
 
 export default function Products() {
   const { others, shoes } = products;

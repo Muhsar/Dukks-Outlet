@@ -1,8 +1,9 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import { products } from ".pages/productsList";
+// import { products } from ".pages/productsList";
 import { Link } from "react-router-dom";
 import Products from '../components/Landing/Products';
+import { products } from './productsList';
 export default function Landing() {
   const { others, shoes } = products;
   const preview = [

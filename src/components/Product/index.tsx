@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
-import { products } from '../../pages/productsList';
+import { products } from 'pages/productsList';
 
 export default function Product() {
   const {productId, category}: {productId: any, category: any} = useParams()
