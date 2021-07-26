@@ -16,7 +16,7 @@ export default function Products() {
   ];
   return (
       <section className="text-gray-400 bg-gray-800 body-font">
-  <div className="container sm:px-4 px-1 sm:py-8 py-4 mx-auto">
+  <div className="container sm:px-4 px-4 sm:py-8 py-4 mx-auto">
   <h1 className="lg:text-5xl text-2xl text-center f-m-w text-gray-100 font-extrabold">
             Our Products
           </h1>
@@ -32,8 +32,8 @@ export default function Products() {
     {
       preview?.map((product,index)=>(
       <div className="lg:w-1/4 md:w-1/2 p-4 w-full" key={index}>
-        <a className="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={product.image} />
+        <a className="block relative h-60 rounded overflow-hidden">
+          <img alt="ecommerce" className="object-cover object-center w-full h-full block transition-all transform hover:scale-105" src={product.image} />
         </a>
         <div className="mt-4">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY: {product.category}</h3>

@@ -4,6 +4,7 @@ import Carousel from "react-material-ui-carousel";
 import { Link } from "react-router-dom";
 import Products from '../components/Landing/Products';
 import { products } from './productsList';
+import Header from '../components/Header';
 export default function Landing() {
   const { others, shoes } = products;
   const preview = [
@@ -18,37 +19,7 @@ export default function Landing() {
   return (
     <>
       <main className="bg-gray-800 relative">
-        <header className="h-24 sm:h-32 flex items-center z-30 w-full">
-          <div className="container mx-auto px-6 flex items-center justify-between">
-            <div className="uppercase text-gray-50 dark:text-white rounded-lg bg-pink-500 hover:bg-pink-700 px-3 py-1 font-black text-3xl">
-              DO
-            </div>
-            <div className="flex items-center">
-              <nav className="font-sen text-gray-100 dark:text-white uppercase text-lg lg:flex items-center hidden">
-                <a href="#" className="py-2 px-6 flex">
-                  Home
-                </a>
-                <a href="#" className="py-2 px-6 flex">
-                  Watch
-                </a>
-                <a href="#" className="py-2 px-6 flex">
-                  Product
-                </a>
-                <a href="#" className="py-2 px-6 flex">
-                  Contact
-                </a>
-                <a href="#" className="py-2 px-6 flex">
-                  Career
-                </a>
-              </nav>
-              <button className="lg:hidden flex flex-col ml-4">
-                <span className="w-6 h-1 bg-gray-100 dark:bg-white mb-1"></span>
-                <span className="w-6 h-1 bg-gray-100 dark:bg-white mb-1"></span>
-                <span className="w-6 h-1 bg-gray-100 dark:bg-white mb-1"></span>
-              </button>
-            </div>
-          </div>
-        </header>
+        <Header />
         <div className=" bg-gray-800 flex relative z-20 items-center overflow-hidden">
           <div className="container mx-auto px-6 flex sm:flex-row flex-col relative py-16">
             <div className="sm:hidden block sm:w-1/3 lg:w-3/5 relative">

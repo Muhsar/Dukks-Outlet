@@ -6,15 +6,16 @@ export default function SingleProduct({productId, category}) {
   // const {productId, category}: {productId: any, category: any} = useParams()
   const singleProduct = category==="Shoes" ? products.shoes.find(product=>product.id.toString()===productId) : category==="Others" ? products.others.find(product=>product.id.toString()===productId) : null
   console.log(singleProduct, productId, category)
+  const {name, category: type, image} = singleProduct
   return (
     <>
       <section className="text-gray-400 bg-gray-800 body-font overflow-hidden">
   <div className="container px-5 py-24 mx-auto">
     <div className="lg:w-4/5 mx-auto flex flex-wrap">
-      <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://dummyimage.com/400x400" />
+      <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-contain object-center rounded" src={image} />
       <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-        <h2 className="text-sm title-font text-gray-500 tracking-widest">BRAND NAME</h2>
-        <h1 className="text-white text-3xl title-font font-medium mb-1">The Catcher in the Rye</h1>
+        <h2 className="text-sm title-font text-gray-500 tracking-widest">{type}</h2>
+        <h1 className="text-white text-3xl title-font font-medium mb-1">{name}</h1>
         <div className="flex mb-4">
           <span className="flex items-center">
             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 text-indigo-400" viewBox="0 0 24 24">
