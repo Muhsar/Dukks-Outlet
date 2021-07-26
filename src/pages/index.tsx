@@ -2,7 +2,6 @@ import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { products } from "./products";
 import { Link } from "react-router-dom";
-import {ShoppingCartIcon} from "@heroicons/react/outline"
 export default function index() {
   const { others, shoes } = products;
   const preview = [
