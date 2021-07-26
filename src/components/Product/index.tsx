@@ -2,10 +2,10 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import { products } from 'pages/productsList';
 
-export default function Product() {
-  const {productId, category}: {productId: any, category: any} = useParams()
-  const singleProduct = category==="Shoes" ? products.shoes.find(product=>product.id===productId) : category==="Others" ? products.others.find(product=>product.id===productId) : null
-  console.log(singleProduct)
+export default function SingleProduct({productId, category}) {
+  // const {productId, category}: {productId: any, category: any} = useParams()
+  const singleProduct = category==="Shoes" ? products.shoes.find(product=>product.id.toString()===productId) : category==="Others" ? products.others.find(product=>product.id.toString()===productId) : null
+  console.log(singleProduct, productId, category)
   return (
     <>
       <section className="text-gray-400 bg-gray-800 body-font overflow-hidden">
