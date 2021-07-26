@@ -1,5 +1,5 @@
 import React from "react";
-const Index = () => {
+const Table = () => {
     return (
         <div className="py-20">
             <div className="mx-auto container bg-white dark:bg-gray-800 shadow rounded">
@@ -409,4 +409,4 @@ const Index = () => {
         </div>
     );
 };
-export default Index;
+export default Table;

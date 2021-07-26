@@ -1,6 +1,6 @@
 import React from "react";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
-function Index() {
+function Testimonials() {
     return (
         <div>
             <div className="container mx-auto pt-16">
@@ -269,4 +269,4 @@ function Index() {
     );
 }
 
-export default Index;
+export default Testimonials;

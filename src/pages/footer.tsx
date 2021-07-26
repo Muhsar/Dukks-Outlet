@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import { useState } from "react";
-const index = () => {
+const Footer = () => {
     const [mode, setMode] = useState("auto");
     return (
         <div className="pt-12">
@@ -164,4 +164,4 @@ const index = () => {
         </div>
     );
 };
-export default index;
+export default Footer;

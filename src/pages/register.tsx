@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-const Index = () => {
+const Register = () => {
     const form = useRef(null);
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -216,4 +216,4 @@ const Index = () => {
         </>
     );
 };
-export default Index;
+export default Register;

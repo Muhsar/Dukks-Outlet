@@ -1,5 +1,5 @@
 import React from "react";
-function IndexPage() {
+function Feature() {
     return (
         <>
             <div className="mx-auto container px-4 xl:px-0 py-10 xl:py-40">
@@ -30,4 +30,4 @@ function IndexPage() {
     );
 }
 
-export default IndexPage;
+export default Feature;

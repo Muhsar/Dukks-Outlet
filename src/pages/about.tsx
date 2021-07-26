@@ -1,5 +1,5 @@
 import React from "react";
-export default function IndexPage() {
+export default function About() {
     return (
         <>
             <div className="mx-auto container lg:mt-60 mt-10 px-4 lg:px-0">

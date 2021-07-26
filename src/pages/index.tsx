@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { products } from "./products";
 import { Link } from "react-router-dom";
-export default function index() {
+export default function Landing() {
   const { others, shoes } = products;
   const preview = [
     others[14],

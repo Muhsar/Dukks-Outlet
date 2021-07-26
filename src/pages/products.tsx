@@ -1,5 +1,5 @@
 import React from "react";
-function IndexPage() {
+function Products() {
     return (
         <>
             <div className="mt-10 lg:mt-32 mx-auto container">
@@ -116,4 +116,4 @@ function IndexPage() {
     );
 }
 
-export default IndexPage;
+export default Products;

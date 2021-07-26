@@ -1,4 +1,4 @@
-const Index = () => (
+const StatsA = () => (
     <div>
         <section className="px-6 xl:px-0">
             <div className="mt-16 lg:mt-44 mx-auto container">
@@ -28,4 +28,4 @@ const Index = () => (
         </section>
     </div>
 );
-export default Index;
+export default StatsA;

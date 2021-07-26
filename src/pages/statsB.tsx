@@ -1,5 +1,5 @@
 import React from "react";
-function IndexPage() {
+function StatsB() {
     return (
         <>
             <div className="mx-auto container my-20 lg:mt-48 lg:mb-24">
@@ -62,4 +62,4 @@ function IndexPage() {
     );
 }
 
-export default IndexPage;
+export default StatsB;
