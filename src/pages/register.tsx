@@ -168,7 +168,7 @@ const Register = () => {
                             </svg>
                         </div>
                     </div>
-                    <form onSubmit={handleSubmit} ref={form} className="w-full lg:w-1/2 flex justify-center bg-white dark:bg-gray-900">
+                    <form onSubmit={handleSubmit} ref={form} className="w-full lg:w-1/2 flex justify-center bg-white dark:bg-gray-800">
                         <div className="w-full sm:w-4/6 md:w-3/6 lg:w-2/3 text-gray-800 dark:text-gray-100 flex flex-col justify-center px-2 sm:px-0 py-16">
                             <div className="px-2 sm:px-6">
                                 <h3 className="text-2xl sm:text-3xl md:text-2xl font-bold leading-tight">Login To Your Account</h3>

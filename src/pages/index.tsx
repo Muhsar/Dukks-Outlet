@@ -1,7 +1,8 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import { products } from "./products";
+import { products } from ".pages/productsList";
 import { Link } from "react-router-dom";
+import Products from '../components/Landing/Products';
 export default function Landing() {
   const { others, shoes } = products;
   const preview = [
@@ -15,14 +16,14 @@ export default function Landing() {
   console.log(preview)
   return (
     <>
-      <main className="dark:bg-gray-800 relative h-screen">
-        <header className="h-24 sm:h-32 flex items-center z-30 w-full bg-white">
+      <main className="bg-gray-800 relative">
+        <header className="h-24 sm:h-32 flex items-center z-30 w-full">
           <div className="container mx-auto px-6 flex items-center justify-between">
             <div className="uppercase text-gray-50 dark:text-white rounded-lg bg-pink-500 hover:bg-pink-700 px-3 py-1 font-black text-3xl">
               DO
             </div>
             <div className="flex items-center">
-              <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
+              <nav className="font-sen text-gray-100 dark:text-white uppercase text-lg lg:flex items-center hidden">
                 <a href="#" className="py-2 px-6 flex">
                   Home
                 </a>
@@ -36,18 +37,18 @@ export default function Landing() {
                   Contact
                 </a>
                 <a href="#" className="py-2 px-6 flex">
-                  Carrer
+                  Career
                 </a>
               </nav>
               <button className="lg:hidden flex flex-col ml-4">
-                <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
-                <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
-                <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
+                <span className="w-6 h-1 bg-gray-100 dark:bg-white mb-1"></span>
+                <span className="w-6 h-1 bg-gray-100 dark:bg-white mb-1"></span>
+                <span className="w-6 h-1 bg-gray-100 dark:bg-white mb-1"></span>
               </button>
             </div>
           </div>
         </header>
-        <div className="bg-white dark:bg-gray-800 flex relative z-20 items-center overflow-hidden">
+        <div className=" bg-gray-800 flex relative z-20 items-center overflow-hidden">
           <div className="container mx-auto px-6 flex sm:flex-row flex-col relative py-16">
             <div className="sm:hidden block sm:w-1/3 lg:w-3/5 relative">
               <Carousel
@@ -72,7 +73,7 @@ export default function Landing() {
             </div>
             <div className="sm:w-2/3 lg:w-2/5 flex flex-col relative z-20">
               <span className="w-20 h-2 mb-12"></span>
-              <h1 className="font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none dark:text-white text-gray-800">
+              <h1 className="font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none dark:text-white text-gray-100">
                 Dukks
                 <span className="text-5xl sm:text-7xl">Outlet</span>
               </h1>
@@ -117,29 +118,30 @@ export default function Landing() {
             </div>
           </div>
         </div>
-        <div className="mt-5 lg:mt-16 mx-auto container">
-          <h1 className="lg:text-5xl text-2xl text-center f-m-w text-gray-700 font-extrabold">
+        <Products />
+        {/* <div className="mt-5 lg:mt-16 mx-auto container bg-gray-800">
+          <h1 className="lg:text-5xl text-2xl text-center f-m-w text-gray-100 font-extrabold">
             Our Products
           </h1>
           <div className="flex flex-row justify-between px-4 text-lg sm:text-xl py-4">
-            <h1 className="lg:text-3xl text-xl text-center f-m-w text-gray-700 font-medium">
+            <h1 className="lg:text-3xl text-xl text-center f-m-w text-gray-100 font-medium">
               All Collections
             </h1>
             <Link className="text-pink-700" to="/products">
               View All
             </Link>
           </div>
-          <div className="py-4 h-full grid lg:grid-cols-3 gap-3 sm:grid-cols-1 md:grid-cols-2 items-center justify-between xl:px-0 px-4">
+          <div className="py-4 h-full grid lg:grid-cols-3 gap-3 sm:grid-cols-1 md:grid-cols-2 items-center bg-gray-800 justify-between xl:px-0 px-4">
           {
             preview?.map((item,index)=>(
-            <div className="h-full lg:mb-0 mb-4 col-span-1 bg-white shadow rounded-lg">
+            <div className="h-full lg:mb-0 mb-4 col-span-1 bg-gray-800 text-gray-100 shadow rounded-lg">
               <div className="w-full h-96 relative">
                 <img
                   src={item.image}
                   className="absolute w-full h-full inset-0 object-center object-cover z-10"
                 />
                 <div className="left-0 px-3 flex items-center mb-3 justify-between bottom-0 w-full absolute z-20 pt-4">
-                  <h4 className="f-m-m px-6 py-3 rounded-md bg-white"># 30000</h4>
+                  <h4 className="f-m-m px-6 py-3 rounded-md bg-gray-800 text-gray-100"># 30000</h4>
                 </div>
               </div>
               <div className="mt-12 p-2">
@@ -162,7 +164,7 @@ export default function Landing() {
             ))
           }
           </div>
-        </div>
+        </div> */}
       </main>
     </>
   );

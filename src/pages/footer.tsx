@@ -4,7 +4,7 @@ const Footer = () => {
     const [mode, setMode] = useState("auto");
     return (
         <div className="pt-12">
-            <footer id="footer" className="relative z-50 dark:bg-gray-900 pt-24">
+            <footer id="footer" className="relative z-50 dark:bg-gray-800 pt-24">
                 <div className=" border-t border-b border-gray-200 dark:border-gray-700 py-16">
                     <div className="mx-auto container px-4 xl:px-12 2xl:px-4">
                         <div className="lg:flex">
@@ -124,7 +124,7 @@ const Footer = () => {
                                             <polyline points="6 9 12 15 18 9" />
                                         </svg>
 
-                                        <select value={mode} onChange={(e) => setMode(e.target.value)} className="w-full focus:outline-none pl-10 py-2 appearance-none flex items-center h-12 border rounded border-gray-700 dark:border-gray-50 text-sm leading-5 dark:bg-gray-900 dark:text-gray-50">
+                                        <select value={mode} onChange={(e) => setMode(e.target.value)} className="w-full focus:outline-none pl-10 py-2 appearance-none flex items-center h-12 border rounded border-gray-700 dark:border-gray-50 text-sm leading-5 dark:bg-gray-800 dark:text-gray-50">
                                             <option value="auto">Auto</option>
                                             <option value="light">Light</option>
                                             <option value="dark">Dark</option>

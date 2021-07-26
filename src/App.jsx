@@ -27,7 +27,7 @@ export default class Test extends Component {
     <Route path="/login" component={Login} exact />
     <Route path="/register" component={Register} exact />
     <Route path="/products" component={Products} exact />
-    <Route path="/product/:productId" component={SingleProduct} exact />
+    <Route path="/product/:category/:productId" component={SingleProduct} exact />
     <Route path="/cart" component={Cart} exact />
     <Route path="/account" component={Account} exact />
     <Route path="/checkout" component={Checkout} exact />
