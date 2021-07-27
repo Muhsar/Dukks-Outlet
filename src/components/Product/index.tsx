@@ -1,36 +1,36 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import { products } from 'pages/productsList';
-
+import { motion } from 'framer-motion';
 export default function SingleProduct({productId, category}) {
   // const {productId, category}: {productId: any, category: any} = useParams()
   const singleProduct = category==="Shoes" ? products.shoes.find(product=>product.id.toString()===productId) : category==="Others" ? products.others.find(product=>product.id.toString()===productId) : null
   console.log(singleProduct, productId, category)
-  const {name, category: type, image} = singleProduct
+  const {name, category: type, image, id} = singleProduct
   return (
     <>
       <section className="text-gray-400 bg-gray-800 body-font overflow-hidden">
   <div className="container px-5 py-24 mx-auto">
     <div className="lg:w-4/5 mx-auto flex flex-wrap">
-      <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-contain object-center rounded" src={image} />
+      <motion.img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-contain object-center rounded" layoutId={id.toString()} src={image} />
       <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
         <h2 className="text-sm title-font text-gray-500 tracking-widest">{type}</h2>
         <h1 className="text-white text-3xl title-font font-medium mb-1">{name}</h1>
         <div className="flex mb-4">
           <span className="flex items-center">
-            <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 text-indigo-400" viewBox="0 0 24 24">
+            <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 text-pink-400" viewBox="0 0 24 24">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
             </svg>
-            <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 text-indigo-400" viewBox="0 0 24 24">
+            <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 text-pink-400" viewBox="0 0 24 24">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
             </svg>
-            <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 text-indigo-400" viewBox="0 0 24 24">
+            <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 text-pink-400" viewBox="0 0 24 24">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
             </svg>
-            <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 text-indigo-400" viewBox="0 0 24 24">
+            <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 text-pink-400" viewBox="0 0 24 24">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
             </svg>
-            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 text-indigo-400" viewBox="0 0 24 24">
+            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 text-pink-400" viewBox="0 0 24 24">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
             </svg>
             <span className="ml-3">4 Reviews</span>
@@ -59,12 +59,12 @@ export default function SingleProduct({productId, category}) {
             <span className="mr-3">Color</span>
             <button className="border-2 border-gray-800 rounded-full w-6 h-6 focus:outline-none" />
             <button className="border-2 border-gray-800 ml-1 bg-gray-700 rounded-full w-6 h-6 focus:outline-none" />
-            <button className="border-2 border-gray-800 ml-1 bg-indigo-500 rounded-full w-6 h-6 focus:outline-none" />
+            <button className="border-2 border-gray-800 ml-1 bg-pink-500 rounded-full w-6 h-6 focus:outline-none" />
           </div>
           <div className="flex ml-6 items-center">
             <span className="mr-3">Size</span>
             <div className="relative">
-              <select className="rounded border border-gray-700 focus:ring-2 focus:ring-indigo-900 bg-transparent appearance-none py-2 focus:outline-none focus:border-indigo-500 text-white pl-3 pr-10">
+              <select className="rounded border border-gray-700 focus:ring-2 focus:ring-pink-900 bg-transparent appearance-none py-2 focus:outline-none focus:border-pink-500 pl-3 pr-10">
                 <option>SM</option>
                 <option>M</option>
                 <option>L</option>
@@ -80,7 +80,7 @@ export default function SingleProduct({productId, category}) {
         </div>
         <div className="flex">
           <span className="title-font font-medium text-2xl text-white">$58.00</span>
-          <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+          <button className="flex ml-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded">Button</button>
           <button className="rounded-full w-10 h-10 bg-gray-800 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
             <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-5 h-5" viewBox="0 0 24 24">
               <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />

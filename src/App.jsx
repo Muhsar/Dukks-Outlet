@@ -16,11 +16,14 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import { AnimatePresence, AnimateSharedLayout } from "framer-motion"
 
 export default class Test extends Component {
   render() {
 
     return (
+      <AnimatePresence>
+      <AnimateSharedLayout>
       <Router>
           <Switch>
     <Route path="/" component={Landing} exact />
@@ -38,6 +41,8 @@ export default class Test extends Component {
     /> */}
   </Switch>
       </Router>
+      </AnimateSharedLayout>
+      </AnimatePresence>
     );
   }
 }

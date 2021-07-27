@@ -1,165 +1,80 @@
-import { Link, useParams, withRouter, Redirect, useLocation } from 'react-router-dom';
-import { useHistory } from "react-router-dom";
-import React from "react";
-import { useMutation, useQuery } from "react-query";
-import { getSchool, login } from "api/apiCall";
-import { GETSCHOOL, LOGIN_URL } from "api/apiUrl";
-// import { ToastContext } from "App.jsx";
-import jwt_decode from "jwt-decode";
-import { queryKeys } from "api/queryKey";
+import React, {useRef} from "react";
+const Login = () => {
+    const form = useRef(null);
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const form_data = new FormData(form.current);
+        const payload = {};
+        form_data.forEach(function (value, key) {
+            payload[key] = value;
+        });
+         console.log("payload", payload);
+        // Place your API call here to submit your payload.
+    };
 
-
-export default function Login() {
-  const history = useHistory()
-  const params: {slug: any} = useParams()
-  const school = params?.slug
-  const location = useLocation()
-  console.log(params)
-  const { data } = useQuery(
-    [queryKeys.getSchool, school],
-    async () => await getSchool({ url: GETSCHOOL(school) }),
-    {
-      retry: 2,
-      enabled: !!school,
-    }
-  );
-  const [schoolData, setSchoolData] = React.useState(data?.data);
-  React.useEffect(() => {
-    setSchoolData(data?.data);
-  }, [data?.data]);
-  const [open, setOpen] = React.useState(false);
-  const [state, setState] = React.useState<{
-    email: string;
-    password: string;
-  }>({
-    email: "",
-    password: "",
-  });
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setState({ ...state, [event.target.name]: event.target.value });
-  };
-  const { mutate } = useMutation(login, {
-    onSuccess() {
-      localStorage.setItem("schoolId", schoolData?.uid);
-      localStorage.setItem("schoolName", schoolData?.name);
-      localStorage.setItem("schoolLogo", schoolData?.logo);
-      localStorage.setItem("schoolSlug", school.toLowerCase())
-      const token: { groups: string[] } =
-        typeof window !== "undefined" &&
-        jwt_decode(localStorage?.getItem("token"));
-    },
-  });
-  const submitForm = (e: any) => {
-    e.preventDefault();
-    mutate({
-      url: LOGIN_URL,
-      data: {
-        email: state.email,
-        password: state.password,
-      },
-    });
-  };
- 
-  return (
-    <>
-    {/* {
-      localStorage?.token && localStorage?.token !== "undefined" && token?.groups.length === 1 && <Redirect to={redirectRoute} />
-    } */}
-    { 
-    <>
-      <div className="max-h-screen grid sm:grid-cols-2 grid-cols-1 gap-10 max-w-6xl mx-auto">
-        <div
-          className="col-span-1 sm:my-auto sm:mx-auto sm:block hidden"
-          data-aos="fade-in-up"
-          data-aos-duration="800"
-        >
-          <img
-            // src="https://res.cloudinary.com/jewbreel1/image/upload/v1625737196/jewbreel/sms/web_password_sgac11.svg"
-            src={schoolData?.logo}
-            alt=""
-            className="transition-all transform hover:scale-105 hover:-translate-y-3 h-52 w-52"
-          />
-        </div>
-        <div className="min-h-screen bg-gray-50 flex flex-col justify-center sm:py-12 sm:px-6 lg:px-8 px-4 col-span-1">
-          <div className="sm:mx-auto sm:w-full sm:max-w-md">
-            <img
-              className="mx-auto h-auto w-auto sm:hidden"
-              // src="https://res.cloudinary.com/jewbreel1/image/upload/v1625737196/jewbreel/sms/mobile_password_kehmcc.svg"
-              src={schoolData?.logo}
-              alt="Workflow"
-            />
-            <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-              {schoolData?.name}
-            </h2>
-            <h2 className="mt-1 text-center text-3xl font-extrabold text-gray-900">
-              Sign in
-            </h2>
-          </div>
-
-          <div className="sm:mx-auto sm:w-full sm:max-w-md">
-            <div className="bg-gray-50 py-8 px-4 sm:rounded-lg sm:px-5">
-              <form className="space-y-6" onSubmit={submitForm}>
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Email address
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      onChange={handleChange}
-                      id="email"
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      required
-                      className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm"
-                    />
-                  </div>
+    return (
+        <>
+            <section className="bg-white {-- h-screen --}">
+                <div className="mx-auto flex lg:justify-center h-full flex-col lg:flex-row">
+                    <div className="w-full lg:w-1/2 px-2 py-20 sm:py-40 sm:px-12 flex flex-col justify-center items-center bg-pink-600 relative">
+                        <div className="absolute left-0 top-0 pl-3 pt-3">
+                        </div>
+                        <div className="flex relative z-30 flex-col justify-center px-4 md:pr-12">
+                            <div className="px-2 flex flex-col items-center justify-center">
+                            <h1 className="bg-pink-100 text-pink-600 p-10 font-extrabold rounded-full text-center text-3xl">DO</h1>
+                            </div>
+                            <h3 className="text-4xl pt-8 leading-tight text-white text-center">Dukks Outlet</h3>
+                        </div>
+                        <div className="absolute right-0 bottom-0">
+                            
+                        </div>
+                    </div>
+                    <form onSubmit={handleSubmit} ref={form} className="w-full lg:w-1/2 flex justify-center bg-white dark:bg-gray-800">
+                        <div className="w-full sm:w-4/6 md:w-3/6 lg:w-2/3 text-gray-800 dark:text-gray-100 flex flex-col justify-center px-2 sm:px-0 py-16">
+                            <div className="px-2 sm:px-6">
+                                <h3 className="text-2xl sm:text-3xl md:text-2xl font-bold leading-tight">Login To Your Account</h3>
+                            </div>
+                            <div className="mt-8 w-full px-2 sm:px-6">
+                                <div className="flex flex-col mt-8">
+                                    <label htmlFor="email" className="text-lg font-semibold leading-tight">
+                                        Email
+                                    </label>
+                                    <input id="email" required aria-required="true" name="email" className="h-10 px-2 w-full rounded mt-2 text-gray-600 focus:outline-none focus:border focus:border-pink-700 dark:focus:border-pink-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 border-gray-300 border shadow" type="email" />
+                                </div>
+                                <div className="flex flex-col mt-5">
+                                    <label htmlFor="password" className="text-lg font-semibold fleading-tight">
+                                        Password
+                                    </label>
+                                    <input id="password" required aria-required="true" name="password" type="password" className="h-10 px-2 w-full rounded mt-2 text-gray-600 focus:outline-none focus:border focus:border-pink-700 dark:focus:border-pink-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 border-gray-300 border shadow" />
+                                </div>
+                            </div>
+                            <div className="pt-6 w-full flex justify-between px-2 sm:px-6">
+                                <div className="flex items-center">
+                                    <input id="rememberme" name="rememberme" className="w-3 h-3 mr-2" type="checkbox" />
+                                    <label htmlFor="rememberme" className="text-xs">
+                                        Remember Me
+                                    </label>
+                                </div>
+                                <a className="text-xs text-pink-600" href="javascript: void(0)">
+                                    Forgot Password?
+                                </a>
+                            </div>
+                            <div className="px-2 sm:px-6">
+                                <button type="submit" className="focus:outline-none w-full sm:w-auto bg-pink-700 transition duration-150 ease-in-out hover:bg-pink-600 rounded text-white px-8 py-3 text-sm mt-6">
+                                    Login
+                                </button>
+                                <p className="mt-6 text-xs">
+                                    Don’t Have An Account?{" "}
+                                    <a className="underline text-pink-600" href="javascript: void(0)">
+                                        Sign Up
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-
-                <div>
-                  <label
-                    htmlFor="password"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Password
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      onChange={handleChange}
-                      id="password"
-                      name="password"
-                      type="password"
-                      autoComplete="current-password"
-                      required
-                      className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm"
-                    />
-                  </div>
-                </div>
-
-                <div className="text-left">
-                  <Link to={`/${school}/otp`} className="text-blue-600">
-                      Verify New Account
-                  </Link>
-                </div>
-
-                <div>
-                  <button
-                    type="submit"
-                    className="w-full flex justify-center py-2 px-4 border hover:scale-105 transition-all transform border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-                  >
-                    Sign in
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-    }
-    </>
-  );
-}
+            </section>
+        </>
+    );
+};
+export default Login;

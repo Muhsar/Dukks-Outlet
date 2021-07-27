@@ -15,7 +15,7 @@ export default function Navbar() {
                                 <div className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-100 focus:outline-none transition duration-150 ease-in-out">
                                     <div className="visible xl:hidden">
                                         <ul className="p-2 border-r bg-white absolute rounded left-0 right-0 shadow mt-8 md:mt-8 hidden">
-                                            <li className="flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
+                                            <li className="flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-pink-700 focus:text-pink-700 focus:outline-none">
                                                 <div className="flex items-center">
                                                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-grid" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                         <path stroke="none" d="M0 0h24v24H0z" />
@@ -27,7 +27,7 @@ export default function Navbar() {
                                                     <span className="ml-2 font-bold">Dashboard</span>
                                                 </div>
                                             </li>
-                                            <li className="flex xl:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center">
+                                            <li className="flex xl:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-pink-700 focus:text-pink-700 focus:outline-none flex justify-center">
                                                 <div className="flex items-center">
                                                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-puzzle" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                         <path stroke="none" d="M0 0h24v24H0z" />
@@ -36,7 +36,7 @@ export default function Navbar() {
                                                     <span className="ml-2 font-bold">Products</span>
                                                 </div>
                                             </li>
-                                            <li className="flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                                            <li className="flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-pink-700 flex items-center focus:text-pink-700 focus:outline-none">
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-compass" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" />
                                                     <polyline points="8 16 10 10 16 8 14 14 8 16" />
@@ -44,7 +44,7 @@ export default function Navbar() {
                                                 </svg>
                                                 <span className="ml-2 font-bold">Performance</span>
                                             </li>
-                                            <li className="border-b border-gray-300 flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                                            <li className="border-b border-gray-300 flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-pink-700 flex items-center focus:text-pink-700 focus:outline-none">
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-code" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" />
                                                     <polyline points="7 8 3 12 7 16" />
@@ -53,7 +53,7 @@ export default function Navbar() {
                                                 </svg>
                                                 <span className="ml-2 font-bold">Deliverables</span>
                                             </li>
-                                            <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                                            <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-pink-700 flex items-center focus:text-pink-700 focus:outline-none">
                                                 <div className="flex items-center">
                                                     <div className="w-12 cursor-pointer flex text-sm border-2 border-transparent rounded focus:outline-none focus:border-white transition duration-150 ease-in-out">
                                                         <img className="rounded h-10 w-10 object-cover" src="https://tuk-cdn.s3.amazonaws.com/assets/components/horizontal_navigation/hn_1.png" alt="logo" />
@@ -67,7 +67,7 @@ export default function Navbar() {
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
+                                            <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-pink-700 focus:text-pink-700 focus:outline-none">
                                                 <div className="flex items-center">
                                                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                         <path stroke="none" d="M0 0h24v24H0z" />
@@ -159,7 +159,7 @@ export default function Navbar() {
                                         <div className="flex items-center relative" onClick={() => setProfile(!profile)}>
                                             {profile && (
                                                 <ul className="p-2 w-40 border-r bg-white absolute rounded right-0 shadow top-0 mt-16 ">
-                                                    <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
+                                                    <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-pink-700 focus:text-pink-700 focus:outline-none">
                                                         <div className="flex items-center">
                                                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                                 <path stroke="none" d="M0 0h24v24H0z" />
@@ -169,7 +169,7 @@ export default function Navbar() {
                                                             <span className="ml-2">My Profile</span>
                                                         </div>
                                                     </li>
-                                                    <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex items-center">
+                                                    <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-pink-700 focus:text-pink-700 focus:outline-none flex items-center">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-help" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                             <path stroke="none" d="M0 0h24v24H0z" />
                                                             <circle cx={12} cy={12} r={9} />
@@ -178,7 +178,7 @@ export default function Navbar() {
                                                         </svg>
                                                         <span className="ml-2">Help Center</span>
                                                     </li>
-                                                    <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                                                    <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-pink-700 flex items-center focus:text-pink-700 focus:outline-none">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-settings" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                             <path stroke="none" d="M0 0h24v24H0z" />
                                                             <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -267,7 +267,7 @@ export default function Navbar() {
                                             <a className="cursor-pointer">
                                                 <li className="text-gray-800 pt-10">
                                                     <div className="flex items-center">
-                                                        <div className="w-6 h-6 md:w-8 md:h-8 text-indigo-700">
+                                                        <div className="w-6 h-6 md:w-8 md:h-8 text-pink-700">
                                                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-grid" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                                 <path stroke="none" d="M0 0h24v24H0z" />
                                                                 <rect x={4} y={4} width={6} height={6} rx={1} />
@@ -276,7 +276,7 @@ export default function Navbar() {
                                                                 <rect x={14} y={14} width={6} height={6} rx={1} />
                                                             </svg>
                                                         </div>
-                                                        <p className="text-indigo-700 xl:text-base text-base ml-3">Dashboard</p>
+                                                        <p className="text-pink-700 xl:text-base text-base ml-3">Dashboard</p>
                                                     </div>
                                                 </li>
                                             </a>

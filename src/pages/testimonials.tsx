@@ -17,9 +17,9 @@ function Testimonials() {
                                 <div className="flex flex-wrap justify-around">
                                     <div className="xl:w-1/3 lg:w-5/12 w-11/12 sm:w-3/5 md:w-5/12 xl:pb-0 pb-12">
                                         <div className="shadow-lg mx-3 xl:mx-3 sm:mx-0 lg:mx-0 rounded">
-                                            <div className="bg-indigo-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
+                                            <div className="bg-pink-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
                                                 <p className="text-xl text-white pb-1">Alex Parkinson</p>
-                                                <p className="text-base text-indigo-200">AlphaSquad LLC</p>
+                                                <p className="text-base text-pink-200">AlphaSquad LLC</p>
                                             </div>
                                             <div className="pl-6 pr-6 pt-10 relative h-64">
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
@@ -41,9 +41,9 @@ function Testimonials() {
                                     </div>
                                     <div className="xl:w-1/3 lg:w-5/12 w-11/12 sm:w-3/5 md:w-5/12 xl:mb-0 mb-12">
                                         <div className="shadow-lg mx-3 xl:mx-3 sm:mx-0 lg:mx-0 rounded">
-                                            <div className="bg-indigo-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
+                                            <div className="bg-pink-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
                                                 <p className="text-xl text-white pb-1">Ashley Wilson</p>
-                                                <p className="text-base text-indigo-200">i-Intellect Inc</p>
+                                                <p className="text-base text-pink-200">i-Intellect Inc</p>
                                             </div>
                                             <div className="pl-6 pr-6 pt-10 relative h-64">
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
@@ -65,9 +65,9 @@ function Testimonials() {
                                     </div>
                                     <div className="xl:w-1/3 lg:w-5/12 w-11/12 sm:w-3/5 md:w-5/12 xl:mb-0 mb-12">
                                         <div className="shadow-lg mx-3 xl:mx-3 sm:mx-0 lg:mx-0 rounded">
-                                            <div className="bg-indigo-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
+                                            <div className="bg-pink-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
                                                 <p className="text-xl text-white pb-1">Richard Clark</p>
-                                                <p className="text-base text-indigo-200">Apple Inc</p>
+                                                <p className="text-base text-pink-200">Apple Inc</p>
                                             </div>
                                             <div className="pl-6 pr-6 pt-10 relative h-64">
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
@@ -96,9 +96,9 @@ function Testimonials() {
                                 <div className="flex flex-wrap justify-around">
                                     <div className="xl:w-1/3 lg:w-5/12 w-11/12 sm:w-3/5 md:w-5/12 xl:mb-0 mb-12">
                                         <div className="shadow-lg mx-3 xl:mx-3 sm:mx-0 lg:mx-0 rounded">
-                                            <div className="bg-indigo-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
+                                            <div className="bg-pink-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
                                                 <p className="text-xl text-white pb-1">Ashley Wilson</p>
-                                                <p className="text-base text-indigo-200">i-Intellect Inc</p>
+                                                <p className="text-base text-pink-200">i-Intellect Inc</p>
                                             </div>
                                             <div className="pl-6 pr-6 pt-10 relative h-64">
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
@@ -120,9 +120,9 @@ function Testimonials() {
                                     </div>
                                     <div className="xl:w-1/3 lg:w-5/12 w-11/12 sm:w-3/5 md:w-5/12 xl:pb-0 pb-12">
                                         <div className="shadow-lg mx-3 xl:mx-3 sm:mx-0 lg:mx-0 rounded">
-                                            <div className="bg-indigo-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
+                                            <div className="bg-pink-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
                                                 <p className="text-xl text-white pb-1">Alex Parkinson</p>
-                                                <p className="text-base text-indigo-200">AlphaSquad LLC</p>
+                                                <p className="text-base text-pink-200">AlphaSquad LLC</p>
                                             </div>
                                             <div className="pl-6 pr-6 pt-10 relative h-64">
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
@@ -144,9 +144,9 @@ function Testimonials() {
                                     </div>
                                     <div className="xl:w-1/3 lg:w-5/12 w-11/12 sm:w-3/5 md:w-5/12 xl:mb-0 mb-12">
                                         <div className="shadow-lg mx-3 xl:mx-3 sm:mx-0 lg:mx-0 rounded">
-                                            <div className="bg-indigo-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
+                                            <div className="bg-pink-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
                                                 <p className="text-xl text-white pb-1">Richard Clark</p>
-                                                <p className="text-base text-indigo-200">Apple Inc</p>
+                                                <p className="text-base text-pink-200">Apple Inc</p>
                                             </div>
                                             <div className="pl-6 pr-6 pt-10 relative h-64">
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
@@ -175,9 +175,9 @@ function Testimonials() {
                                 <div className="flex flex-wrap justify-around">
                                     <div className="xl:w-1/3 lg:w-5/12 w-11/12 sm:w-3/5 md:w-5/12 xl:mb-0 mb-12">
                                         <div className="shadow-lg mx-3 xl:mx-3 sm:mx-0 lg:mx-0 rounded">
-                                            <div className="bg-indigo-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
+                                            <div className="bg-pink-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
                                                 <p className="text-xl text-white pb-1">Richard Clark</p>
-                                                <p className="text-base text-indigo-200">Apple Inc</p>
+                                                <p className="text-base text-pink-200">Apple Inc</p>
                                             </div>
                                             <div className="pl-6 pr-6 pt-10 relative h-64">
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
@@ -199,9 +199,9 @@ function Testimonials() {
                                     </div>
                                     <div className="xl:w-1/3 lg:w-5/12 w-11/12 sm:w-3/5 md:w-5/12 xl:pb-0 pb-12">
                                         <div className="shadow-lg mx-3 xl:mx-3 sm:mx-0 lg:mx-0 rounded">
-                                            <div className="bg-indigo-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
+                                            <div className="bg-pink-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
                                                 <p className="text-xl text-white pb-1">Alex Parkinson</p>
-                                                <p className="text-base text-indigo-200">AlphaSquad LLC</p>
+                                                <p className="text-base text-pink-200">AlphaSquad LLC</p>
                                             </div>
                                             <div className="pl-6 pr-6 pt-10 relative h-64">
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
@@ -223,9 +223,9 @@ function Testimonials() {
                                     </div>
                                     <div className="xl:w-1/3 lg:w-5/12 w-11/12 sm:w-3/5 md:w-5/12 xl:mb-0 mb-12">
                                         <div className="shadow-lg mx-3 xl:mx-3 sm:mx-0 lg:mx-0 rounded">
-                                            <div className="bg-indigo-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
+                                            <div className="bg-pink-700 pt-6 pb-6 pl-6 rounded-tl rounded-tr">
                                                 <p className="text-xl text-white pb-1">Ashley Wilson</p>
-                                                <p className="text-base text-indigo-200">i-Intellect Inc</p>
+                                                <p className="text-base text-pink-200">i-Intellect Inc</p>
                                             </div>
                                             <div className="pl-6 pr-6 pt-10 relative h-64">
                                                 <div className="h-16 w-16 rounded-full bg-cover border-4 border-white absolute top-0 right-0 -mt-8 mr-6">
